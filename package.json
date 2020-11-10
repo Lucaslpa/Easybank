@@ -8,16 +8,25 @@
     "start": "webpack --watch serve --open dist/index.html"
   },
   "dependencies": {
+    "@types/eslint": "^7.2.4",
     "@types/html-webpack-plugin": "^3.2.4",
+    "@types/styled-components": "^5.1.4",
     "lodash": "^4.17.20",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-scripts": "^4.0.0"
+    "react-scripts": "^4.0.0",
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "@types/react": "^16.9.56",
     "@types/react-dom": "^16.9.9",
     "@types/webpack-dev-server": "^3.11.1",
+    "@typescript-eslint/eslint-plugin": "^4.7.0",
+    "@typescript-eslint/parser": "^4.7.0",
+    "eslint": "^7.13.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-react": "^7.21.5",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^4.5.0",
     "ts-loader": "^8.0.11",
     "typescript": "^4.0.5",
