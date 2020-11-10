@@ -2,5 +2,6 @@ import styled from 'styled-components';
 
 
 export const Logo = styled.img` 
-    height: 65%; 
+    height: 20px;
+
  `;

@@ -10,7 +10,7 @@ export const Button = styled.button`
     border-radius: 20px;
     border: none;
     cursor: pointer; 
-    width: 15vw;
+    width: 160px;
     background: linear-gradient(90deg, ${LimeGreen} 29%, ${BrightCyan} 100%);
     transition: 0.2s;
      span { 

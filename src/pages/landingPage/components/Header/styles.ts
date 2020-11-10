@@ -13,7 +13,6 @@ export const Container = styled.div`
     align-items: center;
     position: relative;
     height: 70px;
-    padding: 10px;
     width: 100%; 
  `;
 
@@ -45,12 +44,16 @@ export const ModalMenuMobile = styled.div`
     background-color: ${DarkBlueOpacity};
     position: absolute;
     top: 100%;
+    z-index: 20;
     width: 100%;
     height: 100vh;
     display: flex;
     -webkit-box-pack: center;
     justify-content: center;
     padding: 20px;
+    @media(min-width: 900px) { 
+        display: none
+   }
 `;
 
 export const MenuMobile = styled.ul`
@@ -65,9 +68,7 @@ background-color: white;
     align-items: center;
     display: flex;
     width: 70vh;
-  @media(min-width: 900px) { 
-        display: none
-   }
+ 
 `;
 
 export const OptionMenuMobile = styled.li`
