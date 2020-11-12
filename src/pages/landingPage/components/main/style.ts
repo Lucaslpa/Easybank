@@ -5,17 +5,14 @@ const SecondTextColor = 'hsl(233, 8%, 62%)';
 
 
 export const Container = styled.div`  
-    display: flex;
-    justify-content: center;
-    overflow-x: hidden;
-    flex-direction: column;
-    height: 100vh;
+    height: 80vh;
+    overflow: scroll;
     width: 100%;
  background-color: ${ColorContainer}; 
 `;
 
 export const EasyBankPresentetion = styled.div`
-height: 100vh; 
+height: 80vh; 
 width: 100vw; 
 position: relative;
 overflow: hidden;

@@ -5,9 +5,9 @@ export const GlobalStyle = createGlobalStyle`
 body { 
      width: 100vw; 
      display: flex;
+     height: 100vh; 
      flex-direction: column; 
      overflow: hidden; 
-     justify-content: center; 
 }
    * { 
         margin:  0 ; 
