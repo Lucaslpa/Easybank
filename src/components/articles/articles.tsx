@@ -1,14 +1,25 @@
 import React from 'react';
-import {Container, Description, Title, author, IMG} from './style';
+import {Container, Description, Title, Author, IMG} from './style';
 
-const Articles: React.FC = () => {
+
+type props = {
+  img?: any ;
+  urlIMG?: string;
+  author: string
+  title: string
+  description: string
+}
+
+
+const Articles: React.FC<props> = (props: props) => {
   return (
     <Container>
-      <IMG/>
-      <
-      <Description></Description>
-
-
+      <IMG src={props.img || props.img} />
+      <div className='infos'>
+        <Author>by {props.author}</Author>
+        <Title>{props.title}</Title>
+        <Description>{props.description}</Description>
+      </div>
     </Container>
   );
 };

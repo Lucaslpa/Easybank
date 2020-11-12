@@ -19,6 +19,8 @@ export const ReasonsIMG = styled.img`
 export const ReasonsTitle = styled.strong`
 color: ${PrimaryTextColor};
 font-family: initial;
+    font-weight: 100;
+
 
 `;
 

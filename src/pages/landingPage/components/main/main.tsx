@@ -2,16 +2,20 @@ import React from 'react';
 
 import {Container, PrimaryText, InfosContainer, SecondText, BackgroundIMG, BackgroundIMGMobile, EasyBankPresentetion} from './style';
 import {WhyEasyBank, ComplementsInfo, Title, Description} from './whyEasyBank';
+import {LatestArticles, TitleLatestArticles} from './latestArticles';
 import backgroundimg from '../../../../publics/bg-intro-desktop.svg';
 import Button from '../../../../components/Button/button';
 import backgroundimgmobile from '../../../../publics/bg-intro-mobile.svg';
 import Reasons from '../../../../components/reasons/reasons';
+import Articles from '../../../../components/articles/articles';
 import apiimg from '../../../../publics/icon-api.svg';
 import onlineimg from '../../../../publics/icon-online.svg';
 import budgetingimg from '../../../../publics/icon-budgeting.svg';
 import onboardingimg from '../../../../publics/icon-onboarding.svg';
-
-
+import conffetiimg from '../../../../publics/image-confetti.jpg';
+import currencyimg from '../../../../publics/image-currency.jpg';
+import planeimg from '../../../../publics/image-plane.jpg';
+import restaurantimg from '../../../../publics/image-restaurant.jpg';
 const Main: React.FC = () => {
   return (
     <Container>
@@ -38,6 +42,13 @@ const Main: React.FC = () => {
         <Reasons img={onboardingimg} Title="Fast Onboarding" description="We don't do branches. Open your account in minutes online and start taking control of your finance right away."/>
         <Reasons img={apiimg} Title="Open API" description="Manage your savings. Investiments, pension, and much more from one account. Tracking your money has never been easier."/>
       </WhyEasyBank>
+      <LatestArticles>
+        <TitleLatestArticles>Latest Articles</TitleLatestArticles>
+        <Articles img={currencyimg} author='Claire Robinson' title='Receive money in  any currency with no fees' description="The world is getting smaller and we'are becoming more mobile. So why should you be forced to only receive money in a single..."/>
+        <Articles img={restaurantimg} author='Wilsons Hutton' title='Treat yourself without worrying about money' description="Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you..."/>
+        <Articles img={planeimg} author='Wilsons Hutton' title='Take your Easybank card wherever you go' description="We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you …"/>
+        <Articles img={conffetiimg} author='Claire Robinson' title='Our invite-only Beta accounts are now live!' description="After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ..."/>
+      </LatestArticles>
 
     </Container>
   );

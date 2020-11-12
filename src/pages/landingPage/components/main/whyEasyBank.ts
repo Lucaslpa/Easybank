@@ -12,7 +12,6 @@ export const WhyEasyBank = styled.div`
 
 export const ComplementsInfo = styled.div`
     display: flex;
-    /* border: solid; */
     height: 200px;
     flex-direction: column;
     justify-content: space-evenly;
@@ -24,6 +23,7 @@ export const Title = styled.strong`
 color: ${PrimaryTextColor};
 font-size: 30px;
     font-family: initial;
+    font-weight: 100;
 `;
 
 export const Description = styled.p`

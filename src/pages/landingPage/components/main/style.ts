@@ -7,6 +7,7 @@ const SecondTextColor = 'hsl(233, 8%, 62%)';
 export const Container = styled.div`  
     height: 80vh;
     overflow: scroll;
+    overflow-x: hidden; 
     width: 100%;
  background-color: ${ColorContainer}; 
 `;
@@ -59,7 +60,8 @@ export const SecondText = styled.p`
 
 export const PrimaryText = styled.strong` 
     font-size: 33px;
-    font-weight: initial;
+    font-family: initial;
+    font-weight: 100;
     color: ${PrimaryTextColor};
     @media(max-width: 900px) { 
    }
