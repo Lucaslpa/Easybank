@@ -24,7 +24,7 @@ export const ReasonsIMG = styled.img`
         
     max-width: 100%;
     max-height: 100%;
-    width: 37%;
+    width: 33%;
 
     }
 `;
@@ -32,17 +32,16 @@ export const ReasonsIMG = styled.img`
 
 export const ReasonsTitle = styled.strong`
 color: ${PrimaryTextColor};
-font-family: initial;
-
-
 `;
 
 
 export const ReasonsDescriptioon = styled.p` 
 text-align: center;
+font-weight: 100;
 color: ${SecondTextColor};
 @media(min-width: 900px) { 
          text-align: initial;
+         font-weight: 800;
     }
 
 `;

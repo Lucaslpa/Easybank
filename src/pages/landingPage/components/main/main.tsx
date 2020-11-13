@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Container, PrimaryText, InfosContainer, SecondText, BackgroundIMG, BackgroundIMGMobile, EasyBankPresentetion} from './style';
+import {Container, PrimaryText, InfosContainer, SecondText, BackgroundIMG, BackgroundIMGMobile, EasyBankPresentetion, BackgroundIMGMockups} from './style';
 import {WhyEasyBank, ComplementsInfo, Title, Description, ReasonsContainer} from './whyEasyBank';
 import {LatestArticles, TitleLatestArticles, ArticlesContainer} from './latestArticles';
 import backgroundimg from '../../../../publics/bg-intro-desktop.svg';
@@ -16,18 +16,20 @@ import conffetiimg from '../../../../publics/image-confetti.jpg';
 import currencyimg from '../../../../publics/image-currency.jpg';
 import planeimg from '../../../../publics/image-plane.jpg';
 import restaurantimg from '../../../../publics/image-restaurant.jpg';
+import mockupsimg from '../../../../publics/image-mockups.png';
 import Footer from '../footer/footer';
 const Main: React.FC = () => {
   return (
     <Container>
       <EasyBankPresentetion>
+        <BackgroundIMGMockups src={mockupsimg} />
         <BackgroundIMGMobile src={backgroundimgmobile} />
         <InfosContainer>
           <PrimaryText>
-        Next generation <br/> digital banking
+            Next generation <br/> digital banking
           </PrimaryText>
           <SecondText>
-        Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.
+            Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.
           </SecondText>
           <Button text='Request invite' />
         </InfosContainer>

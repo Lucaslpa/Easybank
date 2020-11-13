@@ -8,6 +8,7 @@ import Button from '../../../../components/Button/button';
 
 export const Container = styled.div` 
   display: flex;
+  overflow: hidden;
     justify-content: space-around;
     -webkit-box-align: center;
     align-items: center;

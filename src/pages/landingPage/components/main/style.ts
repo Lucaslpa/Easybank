@@ -16,7 +16,7 @@ export const Container = styled.div`
  }
 
  ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 /* Track */
@@ -26,7 +26,7 @@ export const Container = styled.div`
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: ${PrimaryTextColor};
 }
 
 /* Handle on hover */
@@ -36,14 +36,14 @@ export const Container = styled.div`
 `;
 
 export const EasyBankPresentetion = styled.div`
-height: 80vh; 
+height: 91vh; 
 width: 100vw; 
 position: relative;
-overflow: hidden;
 display: flex;
     align-items: center;
     @media(max-width: 900px) { 
         flex-direction: column; 
+        height: 80vh; 
    }
 
 `;
@@ -52,27 +52,30 @@ export const InfosContainer = styled.div`
     width: 40%;  
     margin-left: 11%;
     justify-content: space-evenly;
-    height: 300px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     margin-bottom: 9%;
     @media(max-width: 900px) { 
       width: 100%;
-      margin-left:0;
-      margin-bottom: 0;       
-      height: 250px; 
-      align-items: center;
+    margin-left: 0px;
+    top: 36%;
+    position: absolute;
+    height: 300px;
+    -webkit-box-align: center;
+    align-items: center;
    }
  `;
 
 
 export const SecondText = styled.p` 
     width: 70%;
+    font-size: 25px;
     color: ${SecondTextColor};
     @media(max-width: 900px) { 
       width: 60%;
           text-align: center;
-
+          font-size: 20px;
         flex-direction: column; 
    }
    @media(max-width: 500px) { 
@@ -83,7 +86,6 @@ export const SecondText = styled.p`
 
 export const PrimaryText = styled.strong` 
     font-size: 33px;
-    font-family: initial;
     color: ${PrimaryTextColor};
     @media(max-width: 900px) { 
    }
@@ -102,11 +104,26 @@ export const BackgroundIMG = styled.img`
  `;
 
 export const BackgroundIMGMobile = styled.img` 
-    height: 30%;
+   position: absolute;
+    height: 40%;
     width: 100%;
  @media(min-width: 900px) { 
         display: none
    }
  
  `;
+
+
+export const BackgroundIMGMockups = styled.img`
+ position: absolute;
+    z-index: 20;
+    height: 110vh;
+    right: 3%;
+    transform: translate(10px, 10px);
+     @media(max-width: 900px) { 
+      height: 50vh;
+      transform: translate(0px, -35%);
+      right: initial;
+     }
+`;
 

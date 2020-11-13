@@ -13,11 +13,10 @@ export const Container = styled.div`
     margin: 20px;
     :hover {
      cursor: pointer; 
-     background: #ededed;
     }
 
   .infos { 
-    height: 200px;
+    height: auto;
     padding: 20px;
     background: white;
     display: flex;
@@ -40,11 +39,13 @@ export const Author = styled.h4`font-size: 13px;
 
 export const Title = styled.strong` 
     color: ${PrimaryTextColor};
-    font-family: initial;
+    margin: 10px 0 ;
  `;
 
 export const Description = styled.p`
- font-size: 16px;
- font-weight: 700; 
- color: ${SecondTextColor} 
+ color: ${SecondTextColor}  ;
+ font-weight: 800;
+  @media(max-width: 900px) { 
+    font-weight: 100;
+  }
 `;

@@ -28,7 +28,7 @@ const Header: React.FC = () => {
       </MenuMobile>
     </ModalMenuMobile>)}
     <HamburguerMenu onClick={ (e) => setOpenMenuMobile(!openMenuMobile)} src={openMenuMobile ? close : hamburgermenuimg} />
-    <ButtonEdited text='Request invites' />
+    <ButtonEdited text='Request invite' />
   </Container>;
 };
 

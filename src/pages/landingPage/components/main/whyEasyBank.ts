@@ -27,16 +27,23 @@ export const ComplementsInfo = styled.div`
 
 export const Title = styled.strong` 
 color: ${PrimaryTextColor};
-font-size: 30px;
-    font-family: initial;
+text-align: initial;
+font-size: 35px; 
+ @media(max-width: 900px) { 
+    font-size: 30px;
+    width: 200px;
+    text-align: center;
+ }
 `;
 
 export const Description = styled.p`
 text-align: center;
 color: ${SecondTextColor};
+font-size: 20px;
 @media(min-width: 900px) { 
         text-align: initial;
         width: 60%;
+        font-size: 25px;
     }
 `;
 
