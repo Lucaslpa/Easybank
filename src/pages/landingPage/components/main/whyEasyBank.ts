@@ -5,8 +5,10 @@ const SecondTextColor = 'hsl(233, 8%, 62%)';
 export const WhyEasyBank = styled.div`   
       height: auto;
       background-color: ${whyEasyBanKBGcolor};
-      padding: 20px; 
-      
+      padding: 20px;   
+      @media(min-width: 900px) { 
+         padding: 100px
+    }
 `;
 
 
@@ -16,6 +18,10 @@ export const ComplementsInfo = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    @media(min-width: 900px) { 
+        padding: 30px;
+        align-items: initial;
+    }
 `;
 
 
@@ -23,11 +29,21 @@ export const Title = styled.strong`
 color: ${PrimaryTextColor};
 font-size: 30px;
     font-family: initial;
-    font-weight: 100;
 `;
 
 export const Description = styled.p`
 text-align: center;
 color: ${SecondTextColor};
+@media(min-width: 900px) { 
+        text-align: initial;
+        width: 60%;
+    }
 `;
 
+
+export const ReasonsContainer = styled.div`
+ height: auto; 
+ @media(min-width: 900px) { 
+    display: flex; 
+    }
+`;

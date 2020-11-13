@@ -11,11 +11,26 @@ display: flex;
     height: auto;
     flex-direction: column;
     justify-content: space-evenly;
+    @media(min-width: 900px) { 
+         align-items: initial;
+         padding: 100px;
+    }
 `;
 
 export const TitleLatestArticles = styled.h2`
     font-size: 33px;
-    font-weight: 100;
     margin: 0 40px;
     color: ${PrimaryTextColor}
+`;
+
+
+export const ArticlesContainer = styled.div`
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+
+    @media(min-width: 900px) { 
+        flex-direction: initial;
+    }
 `;

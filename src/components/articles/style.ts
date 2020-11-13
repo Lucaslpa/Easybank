@@ -11,6 +11,10 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     margin: 20px;
+    :hover {
+     cursor: pointer; 
+     background: #ededed;
+    }
 
   .infos { 
     height: 200px;

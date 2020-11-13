@@ -9,17 +9,30 @@ export const Container = styled.div`
     height: 240px;
     padding: 20px;
 
+    @media(min-width: 900px) { 
+         height: 280px;
+         align-items: initial; 
+        
+    }
+
 `;
 
 
 export const ReasonsIMG = styled.img` 
+
+@media(min-width: 900px) { 
+        
+    max-width: 100%;
+    max-height: 100%;
+    width: 37%;
+
+    }
 `;
 
 
 export const ReasonsTitle = styled.strong`
 color: ${PrimaryTextColor};
 font-family: initial;
-    font-weight: 100;
 
 
 `;
@@ -27,5 +40,9 @@ font-family: initial;
 
 export const ReasonsDescriptioon = styled.p` 
 text-align: center;
-color: ${SecondTextColor}
+color: ${SecondTextColor};
+@media(min-width: 900px) { 
+         text-align: initial;
+    }
+
 `;
