@@ -5,11 +5,13 @@ const DarkBlue = 'hsl(233, 26%, 24%)';
 export const Container = styled.div`
 background-color: ${DarkBlue};
 padding: 50px; 
+height: 700px;
 @media(min-width: 900px) { 
     justify-content: center;
     align-items: center;
     display: flex;
     padding: 0; 
+    height: 400px;
 }
 `;
 
@@ -20,9 +22,6 @@ export const LogoAndSocialMedias = styled.div`
     align-items: center;
     height: 70px;
     justify-content: space-between;
-
-   
-
     @media(min-width: 900px) { 
         height: 80px;
         width: 25%;
@@ -35,8 +34,6 @@ export const SocialMedias = styled.div`
     justify-content: space-evenly;
     @media(min-width: 900px) { 
         width: 60%;
-
-   
 }
 img { 
      width: 20px; 
@@ -74,6 +71,7 @@ display: flex;
     margin-left: 20%;
    
 }
+
     h6 {
         font-family: initial;
     }

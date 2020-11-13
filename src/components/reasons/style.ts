@@ -24,7 +24,7 @@ export const ReasonsIMG = styled.img`
         
     max-width: 100%;
     max-height: 100%;
-    width: 33%;
+    width: 28%;
 
     }
 `;

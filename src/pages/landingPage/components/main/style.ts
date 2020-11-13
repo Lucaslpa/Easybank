@@ -5,13 +5,13 @@ const SecondTextColor = 'hsl(233, 8%, 62%)';
 
 
 export const Container = styled.div`  
-    height: 80vh;
+    height: 100vh;
     overflow: scroll;
     overflow-x: hidden; 
     width: 100%;
  background-color: ${ColorContainer}; 
  @media(min-width: 900px) { 
-  height: 91vh;
+  height: 100vh;
 
  }
 
@@ -117,7 +117,7 @@ export const BackgroundIMGMobile = styled.img`
 export const BackgroundIMGMockups = styled.img`
  position: absolute;
     z-index: 20;
-    height: 110vh;
+    height: 60vw;
     right: 3%;
     transform: translate(10px, 10px);
      @media(max-width: 900px) { 
